@@ -1,5 +1,31 @@
-// Download functionality
+// Remove no-js class when JavaScript is enabled
+document.documentElement.classList.remove('no-js');
+
+// Startup loader functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Startup loader with GIF that stops near the end
+    const startupLoader = document.getElementById('startup-loader');
+    const startupGif = document.getElementById('startup-gif');
+
+    // Set GIF to not loop and control playback timing
+    if (startupGif) {
+        // Play the GIF for approximately 3.5 seconds (adjust based on your GIF length)
+        // The GIF will play once and then fade out - it will NOT repeat/loop
+        setTimeout(() => {
+            // Start fading out the loader
+            startupLoader.style.opacity = '0';
+
+            // Remove loader after fade animation completes
+            setTimeout(() => {
+                startupLoader.style.display = 'none';
+                startupLoader.remove();
+            }, 500);
+        }, 3500); // 🎯 TIMING ADJUSTMENT: Change this value to match your GIF duration
+                  // - If GIF is longer: increase this number (e.g., 4500 for 4.5 seconds)
+                  // - If GIF is shorter: decrease this number (e.g., 2500 for 2.5 seconds)
+                  // - Current: 3500ms = plays ~80-90% of the GIF before fading out
+    }
+
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
