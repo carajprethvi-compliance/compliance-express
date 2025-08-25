@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCEXpress - Your Trusted Compliance Solution</title>
+    <link rel="icon" type="image/png" href="NCE_XPRESS_icon.png">
+    <link rel="preload" href="NCE XPRESS STARTUP GIF.gif" as="image">
+    <link rel="preload" href="NCE_XPRESS_logo_transparent_v34.png" as="image">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Startup Loading Screen -->
+    <div id="startup-loader" class="startup-loader">
+        <div class="startup-content">
+            <img src="NCE XPRESS STARTUP GIF.gif" alt="NCEXpress Startup" class="startup-gif" id="startup-gif">
+            <div class="startup-text">
+                <h2>Loading NCEXpress</h2>
+                <p>Initializing your financial compliance experience...</p>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="navbar">
             <div class="logo">
@@ -24,6 +38,9 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
+            <div class="logo-container">
+                <img src="NCE_XPRESS_logo_transparent_v34.png" alt="NCEXpress Logo" class="hero-logo">
+            </div>
             <h1>Welcome to NCEXpress</h1>
             <p>Professional Financial Compliance & Accounting Software with Tally Integration</p>
             <div class="cta-buttons">
@@ -158,6 +175,11 @@
         </div>
     </footer>
 
+    <noscript>
+        <style>
+            .startup-loader { display: none !important; }
+        </style>
+    </noscript>
     <script src="script.js"></script>
 </body>
 </html>
