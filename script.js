@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Replace these URLs with your actual hosted file URLs
     const downloadUrls = {
-        windows: '#', // Replace with actual Windows download URL
+        windows: 'https://github.com/carajprethvi-compliance/NCEXPRESS_DOWNLOADS_V1.0.0/releases/tag/v1.0.0', // GitHub release URL for Windows
         mac: '#' // Replace with actual macOS download URL
     };
 
