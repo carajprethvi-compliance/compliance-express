@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Replace these URLs with your actual hosted file URLs
     const downloadUrls = {
-        windows: 'https://github.com/carajprethvi-compliance/NCEXPRESS_DOWNLOADS_V1.0.0/releases/download/v1.0.0/NCExpress_Setup_1.0.0.exe', // Direct download link to Windows executable
+        windows: 'https://github.com/carajprethvi-compliance/NCEXPRESS_DOWNLOADS_V1.0.0/releases/download/v1.0.0/NCEXPRESS_v1.0.0_Setup.exe', // Direct download link to Windows executable
         mac: '#' // Replace with actual macOS download URL
     };
 
