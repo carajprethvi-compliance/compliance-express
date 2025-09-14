@@ -43,6 +43,9 @@
     }
 }
 
+/* Trademark mark size/alignment */
+.tm { font-size: 0.65em; vertical-align: super; line-height: 0; margin-left: 1px; }
+
 /* Reset and Base Styles */
 * {
     margin: 0;
