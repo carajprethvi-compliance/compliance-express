@@ -30,9 +30,9 @@
                 <li><a href="#downloads">Downloads</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="legal_index.html">Legal</a></li>
-                <li><a href="terms_index.html">Terms</a></li>
-                <li><a href="privacy_index.html">Privacy</a></li>
+                <li><a href="/legal/">Legal</a></li>
+                <li><a href="/terms/">Terms</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +43,7 @@
                 <img src="NCE_XPRESS_logo_transparent_v34.png" alt="NCEXpress Logo" class="hero-logo">
             </div>
             <h1>Welcome to NCEXpress</h1>
-            <p>Professional Financial Compliance & Accounting Software with Tally Integration</p>
+            <p>ICAI-aligned Schedule&nbsp;III &amp; Schedule&nbsp;II automation with deep Tally integration</p>
             <div class="cta-buttons">
                 <a href="#downloads" class="btn btn-primary">Download App</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
@@ -56,33 +56,41 @@
             <h2>About NCE Xpress</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>NCEXpress is a powerful financial compliance and accounting software designed for modern businesses. Built with advanced PyQt6 technology, it offers seamless Tally integration, automated financial statement generation, and comprehensive compliance management.</p>
-                    <p>Featuring intelligent Notes to Accounts conversion, multi-format Excel processing, and Schedule II & III compliance tools, our desktop application streamlines your financial workflow while ensuring accuracy and regulatory compliance.</p>
+                    <p>NCEXpress is a desktop app crafted for Chartered Accountants to turn Tally books into ICAI-aligned, print-ready financials. Built on PyQt6, it focuses on speed, accuracy, and control—keeping processing local on your machine while licensing is online.</p>
+                    <p><strong>Schedule III + Schedule II</strong>: The engine covers Balance Sheet, Profit &amp; Loss and related notes under Schedule III, and PPE movement/useful life tracking under Schedule II, with smart linkages (e.g., current maturities, inventory groupings) and an iterative "review-refresh" loop.</p>
                 </div>
                 <div class="features">
                     <div class="feature">
-                        <h3>🔗 Tally Integration</h3>
-                        <p>Direct connection to Tally accounting software for seamless data import</p>
+                        <h3>🔗 Deep Tally Integration</h3>
+                        <p>ODBC + HTTP (XML) based import; multi-company and multi-year loads; refresh without remapping.</p>
                     </div>
                     <div class="feature">
-                        <h3>📊 Smart Notes Processing</h3>
-                        <p>AI-powered Notes to Accounts conversion with spell checking</p>
+                        <h3>🧠 Notes to Accounts</h3>
+                        <p>Fast conversion &amp; tidy structure; inline edits, add/move/delete lines, auto renumbering of notes.</p>
                     </div>
                     <div class="feature">
-                        <h3>📈 Financial Reporting</h3>
-                        <p>Automated Balance Sheet, Profit & Loss, and Schedule II & III generation</p>
+                        <h3>📈 Schedule III + Schedule II</h3>
+                        <p>Automated BS/PL/Notes and PPE movement—with cross-links that stay in sync on refresh.</p>
                     </div>
                     <div class="feature">
-                        <h3>💾 Auto Backup</h3>
-                        <p>Intelligent data backup with configurable intervals and recovery</p>
+                        <h3>🔢 Multiple Number Formats</h3>
+                        <p>Switch between Indian (lakhs/crores) and international formats; consistent rounding and minus styles.</p>
                     </div>
                     <div class="feature">
-                        <h3>🎨 Modern Interface</h3>
-                        <p>Professional GUI with audio feedback and customizable themes</p>
+                        <h3>📋 Excel Power</h3>
+                        <p>Print-ready exports with structure, banding, and page-friendly layout to cut rework.</p>
                     </div>
                     <div class="feature">
-                        <h3>📋 Excel Integration</h3>
-                        <p>Multi-format Excel import/export with advanced formatting</p>
+                        <h3>⚡ Performance-First</h3>
+                        <p><strong>Journal voucher fetch:</strong> use local Tally data for ~5× faster loads; or install NCEXpress on the server hosting Tally to avoid copy-paste drudgery.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🎛️ Modern UI</h3>
+                        <p>Professional theming, keyboard-friendly UX, and background workers that keep the app responsive.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>💾 Safety</h3>
+                        <p>Local-first processing; configurable backups; license checks online (internet required to run).</p>
                     </div>
                 </div>
             </div>
@@ -98,7 +106,7 @@
                     <p>Compatible with Windows 10 and above</p>
                     <div class="download-info">
                         <span class="file-size">File Size: ~50 MB</span>
-                        <span class="version">Version: 1.0.0</span>
+                        <span class="version">Version: 1.1.1</span>
                     </div>
                     <a href="#" id="windows-download" class="btn btn-download">
                         <span class="download-icon">⬇</span>
@@ -110,22 +118,28 @@
             <div class="download-notes">
                 <h4>📝 System Requirements</h4>
                 <ul>
-                    <li>Windows 10+</li>
-                    <li>Minimum 4GB RAM (8GB recommended)</li>
-                    <li>500MB free disk space</li>
-                    <li>Microsoft Excel (for Excel import/export features)</li>
-                    <li>Internet connection for Tally integration</li>
+                    <li><strong>OS:</strong> Windows 10/11 (64-bit)</li>
+                    <li><strong>CPU:</strong> 4-core recommended</li>
+                    <li><strong>RAM:</strong> 8 GB recommended (4 GB minimum)</li>
+                    <li><strong>Display:</strong> 1920×1080 (1080p) or 2K monitor recommended for best results</li>
+                    <li><strong>Disk:</strong> ~1 GB free for app + working files</li>
+                    <li><strong>Excel:</strong> Microsoft Excel installed (for Excel import/export features)</li>
+                    <li><strong>Internet:</strong> <u>Mandatory</u> for license authentication and running the app; stable connection advised</li>
+                    <li><strong>Tally (if used):</strong> Enable <u>ODBC</u> and <u>HTTP (XML)</u> in Tally and set an accessible port (commonly 9000). Prefer running NCEXpress on the same machine as Tally <em>or</em> on the server hosting Tally data for fastest voucher fetches.</li>
+                    <li><strong>Permissions:</strong> Access to the Tally data folder and the configured ODBC/HTTP port; allow outbound HTTPS for licensing.</li>
                 </ul>
                 <h4>🔧 Key Features Included</h4>
                 <ul>
-                    <li>Direct Tally accounting software integration</li>
-                    <li>Smart Notes to Accounts conversion engine</li>
-                    <li>Automated financial statement generation</li>
-                    <li>Multi-format Excel processing</li>
-                    <li>Schedule II & III compliance tools</li>
-                    <li>Auto backup with configurable intervals</li>
-                    <li>Professional GUI with audio feedback</li>
-                    <li>Multiple theme options</li>
+                    <li><strong>Tally Integration:</strong> ODBC + HTTP (XML), multi-company &amp; multi-year, refresh without remapping</li>
+                    <li><strong>Schedule III:</strong> Automated BS/PL/Notes with auto-hide of null heads and clean renumbering</li>
+                    <li><strong>Schedule II (PPE):</strong> Movement schedules, useful life handling, and links to the FS</li>
+                    <li><strong>Notes to Accounts:</strong> Inline edits, add/move/delete lines; quick consistency checks</li>
+                    <li><strong>Multiple Number Formats:</strong> Indian (lakhs/crores) ⇄ international toggles; controlled rounding</li>
+                    <li><strong>Live Review Loop:</strong> Update in NCEXpress while you fix Tally; one-click refresh</li>
+                    <li><strong>Performance Tips:</strong> Journal voucher fetch is fastest with local Tally data (~5×); server install avoids copy-paste cycles</li>
+                    <li><strong>Excel Outputs:</strong> Print-ready layouts with banding, page breaks, and heading hygiene</li>
+                    <li><strong>Backups &amp; Safety:</strong> Configurable backups; local-first processing; online license</li>
+                    <li><strong>UI/UX:</strong> Keyboard-centric workflows, themes, and non-blocking background workers</li>
                 </ul>
             </div>
         </div>
@@ -137,86 +151,62 @@
             <div class="faq-content">
                 <div class="faq-item">
                     <h3>What is NCEXpress?</h3>
-                    <p>NCEXpress is a Windows desktop app built for Chartered Accountants to automate preparation of Non-Corporate Entity (NCE) financial statements—directly from Tally books—into polished, print-ready outputs.</p>
+                    <p>NCEXpress is a Windows desktop app for CAs to automate Non-Corporate Entity financial statements directly from Tally into polished, print-ready outputs.</p>
                 </div>
-                
+                <div class="faq-item">
+                    <h3>Is Schedule III and Schedule II supported?</h3>
+                    <p>Yes. Schedule III (BS/PL/Notes) and Schedule II (PPE movement/useful life) are both covered, with linkages that stay in sync on refresh.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is the internet mandatory?</h3>
+                    <p>Yes. Internet is required to authenticate the license and run the app. Data processing remains local on your machine.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What display and hardware do you recommend?</h3>
+                    <p>For best results, use a 1920×1080 (1080p) or 2K monitor. A 4-core CPU and 8 GB RAM are recommended for smooth multi-company work.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I speed up journal voucher fetching?</h3>
+                    <p>Use local Tally data—running NCEXpress on the same PC as Tally typically yields ~5× faster fetches. In multi-user setups, install NCEXpress on the server hosting Tally to avoid copy-paste cycles.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What needs to be enabled in Tally?</h3>
+                    <p>Enable <strong>ODBC</strong> and <strong>HTTP (XML)</strong> in Tally and set an accessible port (commonly 9000). Ensure firewall rules allow access from NCEXpress.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Does it support multiple number formats?</h3>
+                    <p>Yes. Toggle between Indian (lakhs/crores) and international formats; rounding and minus styles are handled consistently.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How is it different from other tools?</h3>
+                    <p>Multi-company/year loads, live review-refresh loop, issue highlighting, linked schedules, and print-ready Excel reduce manual passes and rework.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my data safe?</h3>
+                    <p>Processing is local-first. Licensing is online, but your books remain on your system unless you share them for support.</p>
+                </div>
                 <div class="faq-item">
                     <h3>Where do I get it?</h3>
                     <p>Visit ncexpress.in → Download → extract → install. For licensing, contact with your Google ID and ICAI membership number.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3>Is it desktop or web?</h3>
-                    <p>Hybrid: a rich Windows desktop client that uses the internet for secure, authenticated licensing. Processing happens locally to protect your data.</p>
-                </div>
-                
                 <div class="faq-item">
                     <h3>How technical is it?</h3>
-                    <p>Modern UI with a gentle learning curve: ~ 2–3 runs for tech-savvy users, 5–10 runs for others (varies by user).</p>
+                    <p>Modern UI with a gentle learning curve: roughly 2–3 runs for power users, 5–10 for others (varies by user).</p>
                 </div>
-                
                 <div class="faq-item">
                     <h3>How much automation can I expect?</h3>
-                    <p>Up to 100% print-ready (subject to data quality) from Tally → Excel in seconds. Entity header/footer and certain prior-period openings may still need inputs.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What's the logic—ledger mapping?</h3>
-                    <p>No rigid "mapping of ledgers." NCEXpress follows a four-stage pipeline: Fetch → Convert → Import (UI) → Export (Excel). This avoids brittle, one-time mappings and supports iterative review.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>How is it different from other tools?</h3>
-                    <p>• Multi-Tally, multi-period: Load multiple companies/years at once; analyse combined or individual views.<br>
-                    • Vouchers fetching for disclosures (e.g., Capital Account, Schedule-II PPE) to push automation closer to 100%.<br>
-                    • Live review loop: Check and correct data in NCEXpress while you also update Tally—then refresh.<br>
-                    • Issue highlights & checks: Flags potential problem rows, auto-hides zero/null heads, auto-renumbers notes, refreshes BS & PL, handles round-offs and year settings.<br>
-                    • UI controls: Add/Delete/Move lines, inline Notes sections, spell checks.<br>
-                    • Linked schedules: Long-term borrowings' current maturities, Inventories, Schedule-II PPE—kept in sync.<br>
-                    • Auto-backup at key intervals/actions.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What are the power tabs in tally import?</h3>
-                    <p>Four power tabs optimized for high-volume work. Use them to load many Tally datasets (including multi-branch/multi-company) and drive a combined "fetching table" for final structure and review.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What does the NCE output look like?</h3>
-                    <p>A pure vertical format tuned for low pagination—≈ five sheets—to minimize printing hassle while keeping ICAI-aligned presentation.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can I customize?</h3>
-                    <p>Yes. Inline Add/Delete/Move, editable notes, links between sections, and one-click refresh flows give you control without leaving the automation track.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Beyond NCE reporting—anything else?</h3>
-                    <p>Plenty: vouchers-level pulls for disclosures, issue highlighting, spell checks, auto-hide & auto-renumber of notes to accounts headings, backups, and cross-linking of key schedules—all designed to reduce manual passes.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Is my data safe?</h3>
-                    <p>Processing is local-first on your machine. Licensing is online; your books and computations remain on your system. Your data, your secret.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Who is behind NCEXpress?</h3>
-                    <p>Built and maintained by CA. B. Raj Prethvi, a practicing CA deeply involved in IT and automation, with guidance and experience from CA. A. Balu. Direct ownership means direct accountability—no middle layers, no miscommunication.</p>
+                    <p>Up to 100% print-ready—subject to data quality—from Tally to Excel within seconds; certain entity headers/openings may still need inputs.</p>
                 </div>
             </div>
-            
             <div class="quick-start">
                 <h3>Quick Start</h3>
                 <ol>
-                    <li>Download & install from ncexpress.in</li>
+                    <li>Download &amp; install from ncexpress.in</li>
                     <li>Request license (Google ID + ICAI Membership No.)</li>
                     <li>Fetch → Convert → Import (UI) → Export (Excel)</li>
                     <li>Review highlights, tweak if needed, print.</li>
                 </ol>
             </div>
-            
             <div class="cta-section">
                 <h3>Ready to Get Started?</h3>
                 <div class="cta-buttons">
@@ -253,12 +243,12 @@
         <div class="container">
             <div class="footer-brand">
                 <img src="ico.ico" alt="NCEXpress Icon" class="footer-icon">
-                <p>&copy; 2024 NCEXpress. All rights reserved.</p>
+                <p>&copy; 2025 NCEXpress. All rights reserved.</p>
             </div>
             <div class="footer-links">
-                <a href="legal_index.html">Legal</a>
-                <a href="terms_index.html">Terms</a>
-                <a href="privacy_index.html">Privacy</a>
+                <a href="/legal/">Legal</a>
+                <a href="/terms/">Terms</a>
+                <a href="/privacy/">Privacy</a>
             </div>
         </div>
         
@@ -268,17 +258,17 @@
                     <div class="summary-block">
                         <h4>Legal Disclaimer (Summary)</h4>
                         <p>NCE Xpress helps CAs draft NCE‑format statements faster. Outputs are aids only and require professional review. ICAI does not endorse this software. Use subject to Terms of Use and Privacy Notice.</p>
-                        <p class="click-details">Click <a href="legal_index.html">Legal</a> for full details.</p>
+                        <p class="click-details">Click <a href="/legal/">Legal</a> for full details.</p>
                     </div>
                     <div class="summary-block">
                         <h4>Terms of Use (Summary)</h4>
                         <p>By downloading or using NCE Xpress you agree to a limited, revocable, non‑exclusive license. No warranties; liability is limited. You are responsible for accuracy, compliance and filings. Indian law governs; disputes are subject to arbitration in [Erode, TN].</p>
-                        <p class="click-details">Click <a href="terms_index.html">Terms</a> for full details.</p>
+                        <p class="click-details">Click <a href="/terms/">Terms</a> for full details.</p>
                     </div>
                     <div class="summary-block">
                         <h4>Privacy Notice (Summary)</h4>
                         <p>We collect only what is needed for license activation, security and support. Client data stays on your device unless you share it with us for troubleshooting. You can request access/correction/erasure as per the DPDP Act, 2023.</p>
-                        <p class="click-details">Click <a href="privacy_index.html">Privacy</a> for full details.</p>
+                        <p class="click-details">Click <a href="/privacy/">Privacy</a> for full details.</p>
                     </div>
                 </div>
             </div>
